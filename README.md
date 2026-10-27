@@ -26,6 +26,15 @@ archives.
   </tr>
 </table>
 
+### Synaps33 source forks
+
+- [FroggyCraft](https://github.com/Synaps33/FroggyCraft) — ClassiCube
+- [FroggyDuke](https://github.com/Synaps33/FroggyDuke) — Duke Nukem 3D
+- [FroggyMania](https://github.com/Synaps33/FroggyMania) — FroggyMania
+- [FroggyPE](https://github.com/Synaps33/FroggyPE) — Minecraft PE
+- [FroggySpacePinbal](https://github.com/Synaps33/FroggySpacePinbal) — Space Cadet Pinball
+- [FroggyTale](https://github.com/Synaps33/FroggyTale) — Undertale
+
 ## How to install
 
 ### TreeFrogUI Installer
