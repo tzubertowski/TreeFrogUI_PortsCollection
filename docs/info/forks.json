@@ -1,0 +1,25 @@
+{
+  "$schema": "./schemas/forks.schema.json",
+  "Synaps33": {
+    "ports": [
+      {
+        "name": "ClassiCube",
+        "url": "https://github.com/Synaps33/FroggyCraft"
+      },
+      {
+        "name": "Duke Nukem 3D",
+        "url": "https://github.com/Synaps33/FroggyDuke"
+      },
+      {
+        "name": "FroggyMania",
+        "url": "https://github.com/Synaps33/FroggyMania"
+      },
+      { "name": "Minecraft PE", "url": "https://github.com/Synaps33/FroggyPE" },
+      {
+        "name": "Space Cadet Pinball",
+        "url": "https://github.com/Synaps33/FroggySpacePinbal"
+      },
+      { "name": "Undertale", "url": "https://github.com/Synaps33/FroggyTale" }
+    ]
+  }
+}

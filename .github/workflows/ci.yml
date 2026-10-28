@@ -8,12 +8,12 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
-          python-version: '3.x'
+          python-version: "3.x"
       - run: python3 tools/validate_ports.py
       - run: python3 tools/build_release.py
       - run: unzip -l dist/TreeFrogUI-Ports-standalone.zip

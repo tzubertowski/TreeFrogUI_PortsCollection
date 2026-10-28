@@ -8,19 +8,48 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: publish-ports
+  cancel-in-progress: true
+
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           submodules: recursive
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v7
         with:
-          python-version: '3.x'
+          python-version: "3.x"
+
+      - name: Update README
+        run: python3 tools/update_readme.py
+
+      - name: Commit README if changed
+        run: |
+          # Safety: the script must only touch README.md
+          others=$(git status --porcelain | grep -v ' README.md$' || true)
+          if [ -n "$others" ]; then
+            echo "Unexpected changes besides README.md:"
+            echo "$others"
+            exit 1
+          fi
+
+          if git diff --quiet -- README.md; then
+            echo "README.md already up to date."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: update README"
+          git push origin HEAD:${{ github.ref_name }}
+
       - run: python3 tools/validate_ports.py
       - run: python3 tools/build_release.py
-      - uses: softprops/action-gh-release@v2
+      - uses: softprops/action-gh-release@v3
         with:
           tag_name: ports-${{ github.run_number }}
           name: Ports collection ${{ github.run_number }}
