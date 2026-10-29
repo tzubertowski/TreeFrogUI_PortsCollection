@@ -1,4 +1,5 @@
 {
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
   "schema_version": 1,
   "id": "openlara",
   "name": "OpenLara",

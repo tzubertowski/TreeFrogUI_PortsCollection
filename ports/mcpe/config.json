@@ -1,4 +1,5 @@
 {
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
   "schema_version": 1,
   "id": "mcpe",
   "name": "Minecraft PE",
@@ -8,7 +9,9 @@
     "binary": "mcpe_libretro.so",
     "content": "Start Minecraft PE.mcpe"
   },
-  "required_file_sets": [["data/images/terrain.png", "data/fonts/minecraft.ttf"]],
+  "required_file_sets": [
+    ["data/images/terrain.png", "data/fonts/minecraft.ttf"]
+  ],
   "setup_guide": "docs/setup/mcpe.md",
   "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/mcpe.md"
 }

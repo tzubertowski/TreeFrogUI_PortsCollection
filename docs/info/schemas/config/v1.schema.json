@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schemas/port-config.schema.json",
+  "title": "Port Config",
+  "description": "Port info for a TreeFrogUI port collection entry (ports/<id>/config.json).",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "launcher",
+    "launch",
+    "required_file_sets",
+    "setup_guide",
+    "setup_guide_url"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "safeRelativePath": {
+      "description": "Non-empty, not absolute, and no '..' path segments.",
+      "type": "string",
+      "pattern": "^(?!/)(?!(.*/)?\\.\\.(/|$)).+$"
+    }
+  },
+  "properties": {
+    "$schema": {
+      "description": "Path or URL to this schema, for editor tooling.",
+      "type": "string"
+    },
+    "schema_version": {
+      "type": "integer",
+      "const": 1
+    },
+    "id": {
+      "description": "Must also match the port's directory name and be unique across ports.",
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_-]*$"
+    },
+    "name": {
+      "description": "Human-readable display name.",
+      "type": "string",
+      "minLength": 1
+    },
+    "launcher": {
+      "description": "Root-level .sh filename (no path separators). Must be unique across ports.",
+      "type": "string",
+      "pattern": "^[^/\\\\]+\\.sh$"
+    },
+    "launch": {
+      "type": "object",
+      "required": ["type", "binary"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["native", "libretro"]
+        },
+        "binary": {
+          "description": "Port-local little-endian 32-bit MIPS ELF, relative to the port directory.",
+          "$ref": "#/$defs/safeRelativePath"
+        },
+        "args": {
+          "description": "Command-line arguments passed to the binary.",
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "content": {
+          "description": "Content file passed to the core. Must be packaged in the port directory or listed in required_file_sets.",
+          "$ref": "#/$defs/safeRelativePath"
+        }
+      },
+      "if": {
+        "properties": { "type": { "const": "libretro" } },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "binary": { "pattern": "_libretro\\.so$" }
+        }
+      }
+    },
+    "required_file_sets": {
+      "description": "User-supplied game data groups. Empty array means no game data is required. Non-empty means a .requires_game_data marker must exist.",
+      "type": "array",
+      "items": {
+        "type": "array",
+        "minItems": 1,
+        "items": { "$ref": "#/$defs/safeRelativePath" }
+      }
+    },
+    "setup_guide": {
+      "description": "Repo-root-relative path to a checked-in guide.",
+      "$ref": "#/$defs/safeRelativePath"
+    },
+    "setup_guide_url": {
+      "type": "string",
+      "pattern": "^https://",
+      "format": "uri"
+    }
+  }
+}

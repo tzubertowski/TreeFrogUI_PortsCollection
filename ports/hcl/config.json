@@ -1,4 +1,5 @@
 {
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
   "schema_version": 1,
   "id": "hcl",
   "name": "Hydra Castle Labyrinth",
@@ -7,7 +8,9 @@
     "type": "native",
     "binary": "hcl.mipsel"
   },
-  "required_file_sets": [["gamedata/data/bmp.qda", "gamedata/data/en.dat", "gamedata/data/jp.dat"]],
+  "required_file_sets": [
+    ["gamedata/data/bmp.qda", "gamedata/data/en.dat", "gamedata/data/jp.dat"]
+  ],
   "setup_guide": "docs/setup/hcl.md",
   "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/hcl.md"
 }
