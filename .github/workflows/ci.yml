@@ -14,6 +14,7 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: "3.x"
+      - run: pip install -r requirements.txt
       - run: python3 tools/validate_ports.py
       - run: python3 tools/build_release.py
       - run: unzip -l dist/TreeFrogUI-Ports-standalone.zip
