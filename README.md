@@ -19,6 +19,7 @@ archives.
     <td align="center"><a href="docs/setup/nikwi.md"><img src="ports/nikwi/boxart.png" width="150" alt="Nikwi Deluxe floppy box art"><br><strong>Nikwi Deluxe</strong></a></td>
     <td align="center"><a href="docs/setup/sdlzombies.md"><img src="ports/sdlzombies/boxart.png" width="150" alt="SDL Zombies floppy box art"><br><strong>SDL Zombies</strong></a></td>
     <td align="center"><a href="docs/setup/tinystg.md"><img src="ports/tinystg/boxart.png" width="150" alt="TinySTG floppy box art"><br><strong>TinySTG</strong></a></td>
+    <td align="center"><a href="docs/setup/watercloset.md"><img src="ports/watercloset/boxart.png" width="150" alt="Water Closet floppy box art"><br><strong>Water Closet</strong></a></td>
   </tr>
 </table>
 

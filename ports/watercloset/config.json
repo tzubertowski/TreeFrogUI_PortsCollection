@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "id": "watercloset",
+  "name": "Water Closet",
+  "launcher": "Water Closet.sh",
+  "launch": {
+    "type": "native",
+    "binary": "waterCloset.mipsel"
+  },
+  "required_file_sets": [],
+  "setup_guide": "docs/setup/watercloset.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/watercloset.md"
+}

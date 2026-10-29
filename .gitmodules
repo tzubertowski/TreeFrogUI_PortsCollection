@@ -49,3 +49,6 @@
 [submodule "ports/chocolatedoom/source"]
 	path = ports/chocolatedoom/source
 	url = https://github.com/Kryptikone316/chocolate-doom.git
+[submodule "ports/watercloset/source"]
+	path = ports/watercloset/source
+	url = https://github.com/Kryptikone316/waterCloset.git

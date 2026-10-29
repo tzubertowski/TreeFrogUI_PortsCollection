@@ -1,0 +1,83 @@
+# Water Closet settings (plain text; edit and relaunch, no rebuild needed).
+#
+# Only lines of the form  name=number  are read, and they are never run as commands. Anything
+# else (a name that is not listed here, a value that is not a number) is ignored and noted in
+# log.txt. Text after a # on a line is a comment.
+#
+# ---- Speed -------------------------------------------------------------------
+#
+# fps:        the frame limit, which is also the game speed. This game does one logic
+#             step per frame, so 60 is the speed it was designed for (its on-screen
+#             clock counts 60 frames to the second); a lower number makes everything
+#             slower, not just less smooth (50 is 17% slower).
+fps=60
+#
+# draw_every: 1 draws a picture on every frame. 2 runs the game and reads the buttons at
+#             the full fps speed but draws a picture only on every 2nd frame (30 a
+#             second at fps=60); 3 draws every 3rd frame. On the SF3500 the early stages
+#             need about 14 ms per frame and could draw every frame at 60, but from about
+#             stage 12 a frame needs 15 to 19 ms, more than the 16.7 ms that 60 allows.
+#             Measured there: 50 fps with every frame drawn ran at about 77% of the
+#             designed speed, and 60 fps with every 2nd frame drawn at about 91%. Use 1
+#             if your device is fast enough to draw every frame (a smoother picture).
+draw_every=2
+#
+# ---- Effects (turn off to save work on a slow device) -----------------------
+#
+# lights:     1 shows the soft glows around coins, traffic lights and Walter, 0 hides
+#             them. They are the most expensive things drawn.
+lights=1
+# particles:  1 shows particle effects (splashes and sparkles), 0 hides them.
+particles=1
+# background: 1 shows the dim brick wall behind the level, 0 leaves it plain dark.
+background=1
+#
+# ---- Picture -----------------------------------------------------------------
+#
+# The game's pictures are drawn at half size for this screen. These settings tune
+# how they are reduced and coloured. Glows and particles are not affected.
+#
+# sharpness:  how crisp the reduced pictures are. 0 is the softest (a plain 2x2
+#             average), 1 the crispest (single pixels picked, like a nearest-pixel
+#             scale). Try 0.3 to 0.8.
+sharpness=0.5
+# saturation: colour strength. 1 is unchanged, above 1 is more colourful.
+saturation=1.0
+# contrast:   difference between light and dark. 1 is unchanged, above 1 is more.
+contrast=1.0
+#
+# ---- Log ---------------------------------------------------------------------
+#
+# perf_log:   1 writes a timing line to log.txt every couple of seconds, which helps
+#             when reporting a speed problem. 0 turns it off.
+perf_log=1
+
+# ---- Priority ----------------------------------------------------------------
+#
+# nice:       scheduling priority of the game, from -20 (most favoured) to 19. 0
+#             treats the game like any other program. A negative value stops small
+#             background jobs from taking a slice of a frame, which can show up as
+#             an occasional hitch.
+nice=-10
+
+# ---- Sound -------------------------------------------------------------------
+#
+# music:      1 plays the music, 0 turns it off completely (sound effects stay).
+#             Streaming the music takes a share of the processor, so turning it
+#             off can help on a slow device.
+music=1
+
+# audio_lead: how many milliseconds ahead of the clock the sound is mixed, 0 to 400.
+#             A bigger lead rides out longer pauses in the game without a gap or
+#             crackle in the sound, but every sound effect starts that much later.
+audio_lead=60
+
+# ---- Controls ----------------------------------------------------------------
+#
+# The buttons themselves are set in controls.txt.
+#
+# jump_repeat: 0 means each jump needs a fresh press of the jump button (a press
+#             made while still in the air counts when Walter lands). 1 is how the
+#             original game behaves: keep the button held and Walter jumps again
+#             the moment he lands.
+jump_repeat=0
