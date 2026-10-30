@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: read
 
 concurrency:
   group: publish-ports
@@ -49,12 +50,18 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python3 tools/validate_ports.py
       - run: python3 tools/build_release.py
+      - name: Generate release notes with port attribution
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RELEASE_TAG: ports-${{ github.run_number }}
+          RELEASE_NOTES_PATH: dist/release-notes.md
+        run: python3 tools/generate_release_notes.py
       - uses: softprops/action-gh-release@v3
         with:
           tag_name: ports-${{ github.run_number }}
           name: Ports collection ${{ github.run_number }}
           make_latest: true
-          generate_release_notes: true
+          body_path: dist/release-notes.md
           files: |
             dist/TreeFrogUI-Ports-standalone.zip
             dist/TreeFrogUI-Ports-requiring-game-data.zip
