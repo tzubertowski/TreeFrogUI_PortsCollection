@@ -36,12 +36,13 @@ Currently this repo has 19 available ports, as showed on the tables bellow.
   <tr>
     <td align="center"><a href="docs/setup/openclaw.md"><img src="ports/openclaw/boxart.png" width="150" alt="Captain Claw floppy box art"><br><strong>Captain Claw</strong></a></td>
     <td align="center"><a href="docs/setup/diablo.md"><img src="ports/diablo/boxart.png" width="150" alt="Diablo 1 floppy box art"><br><strong>Diablo 1</strong></a></td>
+    <td align="center"><a href="docs/setup/ddlc.md"><img src="ports/ddlc/boxart.png" width="150" alt="Doki Doki Literature Club floppy box art"><br><strong>Doki Doki Literature Club</strong></a></td>
     <td align="center"><a href="docs/setup/duke3d.md"><img src="ports/duke3d/boxart.png" width="150" alt="Duke Nukem 3D floppy box art"><br><strong>Duke Nukem 3D</strong></a></td>
     <td align="center"><a href="docs/setup/froggymania.md"><img src="ports/froggymania/boxart.png" width="150" alt="FroggyMania floppy box art"><br><strong>FroggyMania</strong></a></td>
     <td align="center"><a href="docs/setup/hcl.md"><img src="ports/hcl/boxart.png" width="150" alt="Hydra Castle Labyrinth floppy box art"><br><strong>Hydra Castle Labyrinth</strong></a></td>
-    <td align="center"><a href="docs/setup/mcpe.md"><img src="ports/mcpe/boxart.png" width="150" alt="Minecraft PE floppy box art"><br><strong>Minecraft PE</strong></a></td>
   </tr>
   <tr>
+    <td align="center"><a href="docs/setup/mcpe.md"><img src="ports/mcpe/boxart.png" width="150" alt="Minecraft PE floppy box art"><br><strong>Minecraft PE</strong></a></td>
     <td align="center"><a href="docs/setup/openlara.md"><img src="ports/openlara/boxart.png" width="150" alt="OpenLara floppy box art"><br><strong>OpenLara</strong></a></td>
     <td align="center"><a href="docs/setup/spacecadet.md"><img src="ports/spacecadet/boxart.png" width="150" alt="Space Cadet Pinball floppy box art"><br><strong>Space Cadet Pinball</strong></a></td>
     <td align="center"><a href="docs/setup/sorr.md"><img src="ports/sorr/boxart.png" width="150" alt="Streets of Rage Remake floppy box art"><br><strong>Streets of Rage Remake</strong></a></td>
@@ -57,6 +58,7 @@ Some ports are built from upstream game forks adapted for TreeFrogUI. Their sour
 ### Synaps33
 
 - [FroggyCraft](https://github.com/Synaps33/FroggyCraft) -- ClassiCube
+- [FroggyDDLC](https://github.com/Synaps33/FroggyDDLC) -- Doki Doki Literature Club
 - [FroggyDuke](https://github.com/Synaps33/FroggyDuke) -- Duke Nukem 3D
 - [FroggyMania](https://github.com/Synaps33/FroggyMania) -- FroggyMania
 - [FroggyPE](https://github.com/Synaps33/FroggyPE) -- Minecraft PE

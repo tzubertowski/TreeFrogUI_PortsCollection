@@ -1,0 +1,17 @@
+{
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
+  "schema_version": 1,
+  "id": "ddlc",
+  "name": "Doki Doki Literature Club",
+  "launcher": "DDLC.sh",
+  "launch": {
+    "type": "libretro",
+    "binary": "ddlc_libretro.so",
+    "content": "game/DDLC.ddlc"
+  },
+  "required_file_sets": [
+    ["game/assets/fonts/F25_Bank_Printer.ttf"]
+  ],
+  "setup_guide": "docs/setup/ddlc.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/ddlc.md"
+}

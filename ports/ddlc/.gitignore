@@ -1,0 +1,5 @@
+/game/assets/
+/game/persistent
+/game/settings.sav
+/game/save*.sav
+/game/logfile
