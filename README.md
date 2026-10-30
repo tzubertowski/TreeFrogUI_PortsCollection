@@ -11,7 +11,7 @@ archives.
 
 ## Supported ports
 
-Currently this repo has 18 available ports, as showed on the tables bellow.
+Currently this repo has 19 available ports, as showed on the tables bellow.
 
 ### Standalone ports
 
@@ -22,9 +22,10 @@ Currently this repo has 18 available ports, as showed on the tables bellow.
     <td align="center"><a href="docs/setup/hexahop.md"><img src="ports/hexahop/boxart.png" width="150" alt="Hex-a-hop floppy box art"><br><strong>Hex-a-hop</strong></a></td>
     <td align="center"><a href="docs/setup/nikwi.md"><img src="ports/nikwi/boxart.png" width="150" alt="Nikwi Deluxe floppy box art"><br><strong>Nikwi Deluxe</strong></a></td>
     <td align="center"><a href="docs/setup/sdlzombies.md"><img src="ports/sdlzombies/boxart.png" width="150" alt="SDL Zombies floppy box art"><br><strong>SDL Zombies</strong></a></td>
-    <td align="center"><a href="docs/setup/tinystg.md"><img src="ports/tinystg/boxart.png" width="150" alt="TinySTG floppy box art"><br><strong>TinySTG</strong></a></td>
+    <td align="center"><a href="docs/setup/froggytux.md"><img src="ports/froggytux/boxart.png" width="150" alt="SuperTux floppy box art"><br><strong>SuperTux</strong></a></td>
   </tr>
   <tr>
+    <td align="center"><a href="docs/setup/tinystg.md"><img src="ports/tinystg/boxart.png" width="150" alt="TinySTG floppy box art"><br><strong>TinySTG</strong></a></td>
     <td align="center"><a href="docs/setup/froggytuxracer.md"><img src="ports/froggytuxracer/boxart.png" width="150" alt="Tux Racer floppy box art"><br><strong>Tux Racer</strong></a></td>
   </tr>
 </table>
@@ -61,6 +62,7 @@ Some ports are built from upstream game forks adapted for TreeFrogUI. Their sour
 - [FroggyPE](https://github.com/Synaps33/FroggyPE) -- Minecraft PE
 - [FroggySpacePinbal](https://github.com/Synaps33/FroggySpacePinbal) -- Space Cadet Pinball
 - [FroggyTale](https://github.com/Synaps33/FroggyTale) -- Undertale
+- [FroggyTux](https://github.com/Synaps33/FroggyTux) -- SuperTux
 - [FroggyTuxRacer](https://github.com/Synaps33/FroggyTuxRacer) -- Tux Racer
 
 ## Contributors
