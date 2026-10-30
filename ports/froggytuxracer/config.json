@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "id": "froggytuxracer",
+  "name": "Tux Racer",
+  "launcher": "Tux Racer.sh",
+  "launch": {
+    "type": "libretro",
+    "binary": "tuxracer_libretro.so",
+    "content": "assets/TuxRacer.gba"
+  },
+  "required_file_sets": [],
+  "setup_guide": "docs/setup/froggytuxracer.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/froggytuxracer.md"
+}

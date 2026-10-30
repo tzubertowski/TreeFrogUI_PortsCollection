@@ -49,3 +49,6 @@
 [submodule "ports/chocolatedoom/source"]
 	path = ports/chocolatedoom/source
 	url = https://github.com/Kryptikone316/chocolate-doom.git
+[submodule "ports/froggytuxracer/source"]
+	path = ports/froggytuxracer/source
+	url = https://github.com/Synaps33/FroggyTuxRacer.git
