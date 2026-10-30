@@ -15,7 +15,6 @@ cp -a "$SOURCE_DIR/platform" "$TMP_DIR/platform"
 cp "$SOURCE_DIR/src/supertux.cpp" "$TMP_DIR/supertux.cpp"
 cp "$SOURCE_DIR/src/title.cpp" "$TMP_DIR/title.cpp"
 patch -d "$TMP_DIR" -p1 < "$PORT_DIR/hardfloat-fiber.patch"
-patch -d "$TMP_DIR" -p1 < "$PORT_DIR/startup-trace.patch"
 patch -d "$TMP_DIR" -p1 < "$PORT_DIR/title-demo.patch"
 
 COMMON_FLAGS="-O2 -fPIC -G0 -mips32r2 -mtune=74kc -mhard-float -mfp32 -EL --sysroot=$SYSROOT -DNOOPENGL -D_GNU_SOURCE -DDATA_PREFIX=\"./data\" -I$SOURCE_DIR/include -I$SOURCE_DIR/src -I$SOURCE_DIR/platform -I$SOURCE_DIR/libretro"
@@ -46,7 +45,7 @@ done
 OBJECTS="$OBJECTS $TMP_DIR/platform_sdl_fiber_mips.o"
 
 # shellcheck disable=SC2086
-"$CXX" --sysroot="$SYSROOT" -shared -Wl,--no-undefined \
+"$CXX" --sysroot="$SYSROOT" -shared -Wl,--no-undefined -Wl,-Bsymbolic-functions \
     -mips32r2 -mtune=74kc -mhard-float -mfp32 -EL \
     -o "$PORT_DIR/froggytux_libretro.so" $OBJECTS -lm
 "$STRIP" "$PORT_DIR/froggytux_libretro.so"
