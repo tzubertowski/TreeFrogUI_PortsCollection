@@ -1,0 +1,54 @@
+diff --git a/platform/sdl_fiber.c b/platform/sdl_fiber.c
+--- a/platform/sdl_fiber.c
++++ b/platform/sdl_fiber.c
+@@ -4,7 +4,8 @@
+ 
+ #if defined(__mips__)
+ struct st_fiber {
+-    uint32_t regs[13];
++    /* Keep the O32 hard-float callee-saved registers across fiber switches. */
++    uint32_t regs[25];
+     void *stack;
+     size_t stack_size;
+     st_fiber_entry entry;
+diff --git a/platform/sdl_fiber_mips.s b/platform/sdl_fiber_mips.s
+--- a/platform/sdl_fiber_mips.s
++++ b/platform/sdl_fiber_mips.s
+@@ -18,1 +18,13 @@
+     sw $t9, 48($a0)
++    swc1 $f20, 52($a0)
++    swc1 $f21, 56($a0)
++    swc1 $f22, 60($a0)
++    swc1 $f23, 64($a0)
++    swc1 $f24, 68($a0)
++    swc1 $f25, 72($a0)
++    swc1 $f26, 76($a0)
++    swc1 $f27, 80($a0)
++    swc1 $f28, 84($a0)
++    swc1 $f29, 88($a0)
++    swc1 $f30, 92($a0)
++    swc1 $f31, 96($a0)
+@@ -32,1 +42,13 @@
+     lw $t9, 48($a1)
++    lwc1 $f20, 52($a1)
++    lwc1 $f21, 56($a1)
++    lwc1 $f22, 60($a1)
++    lwc1 $f23, 64($a1)
++    lwc1 $f24, 68($a1)
++    lwc1 $f25, 72($a1)
++    lwc1 $f26, 76($a1)
++    lwc1 $f27, 80($a1)
++    lwc1 $f28, 84($a1)
++    lwc1 $f29, 88($a1)
++    lwc1 $f30, 92($a1)
++    lwc1 $f31, 96($a1)
+ 
+     jr $ra
+
+diff --git a/platform/sdl_video.c b/platform/sdl_video.c
+--- a/platform/sdl_video.c
++++ b/platform/sdl_video.c
+@@ -864,1 +864,3 @@ static void present_screen(void)
+     g_stat_presents++;
++    if (g_stat_presents <= 3)
++        fprintf(stderr, "[SuperTux] present frame %llu\n", g_stat_presents);

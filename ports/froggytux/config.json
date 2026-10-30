@@ -1,0 +1,15 @@
+{
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
+  "schema_version": 1,
+  "id": "froggytux",
+  "name": "SuperTux",
+  "launcher": "SuperTux.sh",
+  "launch": {
+    "type": "libretro",
+    "binary": "froggytux_libretro.so",
+    "content": "SuperTux.sf2k"
+  },
+  "required_file_sets": [],
+  "setup_guide": "docs/setup/froggytux.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/froggytux.md"
+}

@@ -52,3 +52,6 @@
 [submodule "ports/froggytuxracer/source"]
 	path = ports/froggytuxracer/source
 	url = https://github.com/Synaps33/FroggyTuxRacer.git
+[submodule "ports/froggytux/source"]
+	path = ports/froggytux/source
+	url = https://github.com/Synaps33/FroggyTux.git

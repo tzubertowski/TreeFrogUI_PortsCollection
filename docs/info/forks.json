@@ -18,6 +18,11 @@
         "name": "Tux Racer",
         "url": "https://github.com/Synaps33/FroggyTuxRacer"
       },
+      {
+        "name": "SuperTux",
+        "title": "FroggyTux",
+        "url": "https://github.com/Synaps33/FroggyTux"
+      },
       { "name": "Minecraft PE", "url": "https://github.com/Synaps33/FroggyPE" },
       {
         "name": "Space Cadet Pinball",
