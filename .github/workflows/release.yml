@@ -46,7 +46,7 @@ jobs:
           git add README.md
           git commit -m "docs: update README"
           git push origin HEAD:${{ github.ref_name }}
-
+      - run: pip install -r requirements.txt
       - run: python3 tools/validate_ports.py
       - run: python3 tools/build_release.py
       - uses: softprops/action-gh-release@v3
