@@ -1,0 +1,14 @@
+{
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
+  "schema_version": 1,
+  "id": "blockdude",
+  "name": "Blockdude",
+  "launcher": "Blockdude.sh",
+  "launch": {
+    "type": "native",
+    "binary": "blockdude.mipsel"
+  },
+  "required_file_sets": [],
+  "setup_guide": "docs/setup/blockdude.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/blockdude.md"
+}

@@ -1,0 +1,50 @@
+Blockdude for the Data Frog SF3500 - credits and licences
+==========================================================
+
+Game code
+  Blockdude (funkey version) - (c) 2006-2024 Willems Davy (joyrider3774, "Willems Soft").
+  MIT licence, text in blockdude-funkey-LICENSE.txt.
+  Source: https://github.com/joyrider3774/blockdude_funkey
+  The SF3500 changes (display, audio and pad glue, on-screen keyboard, parts palette, picture
+  tuning) are in the sf3500 branch of https://github.com/Kryptikone316/blockdude_funkey and are
+  under the same MIT licence.
+
+Game concept and levels
+  Blockdude is a remake of the TI-83 game by Brandon Sterner.
+  The "blockman" level pack comes from Blockman by Soleau Software (http://www.soleau.com).
+  The Blockdude author states that he had Soleau Software's approval to use the levels. The
+  permission was given to him, not to this port; we have not been able to verify it independently.
+
+Graphics (blockdudefs/graphics, blockdudefs/skins)
+  Default skin: Chris Katiesen, made for Klas Kroon's remake of Blockdude/Blockman
+  (http://oos.moxiecode.com). Used with permission obtained by the Blockdude author.
+  FP_Tech and FP_Default_2.0 skins: Fusion Power. In this port's copy of the FP_Tech title screen
+  the first four pixel columns were repaired (the stem of the letter B, which the original image
+  clips at its left edge); nothing else was changed.
+  Ti-83 skin: after Brandon Sterner's TI-83 game.
+  No separate licence text for the graphics ships with the upstream project.
+
+Cyberdeck skin (blockdudefs/skins/Cyberdeck)
+  Original pixel art made for this port, drawn by a script (tools/make_cyberdeck.py in the
+  source repository); same MIT licence as the game. Fonts: DejaVu Sans Mono, see above.
+
+Music and sound
+  Title music (blockdudefs/music/title.ogg): donskeeto. The licence is not stated upstream.
+  Sound effects (blockdudefs/sound/*.wav): the origin is not stated upstream.
+
+Fonts (blockdudefs/fonts)
+  font.ttf = DejaVu Sans, font2.ttf = DejaVu Sans Condensed, font1.ttf = DejaVu Sans Mono.
+  (c) Bitstream, Inc. (Bitstream Vera) and Tavmjong Bah (Arev glyphs); DejaVu changes are in the
+  public domain. Licence text in DejaVu-fonts-LICENSE.txt. These replace the original game's
+  Verdana, IrisUPC and Monofonto fonts, which are not free to redistribute.
+
+Third-party code compiled into the SF3500 build
+  SDL_ttf 1.2.11 (bundled as libSDL_ttf-2.0.so.0)  zlib licence, SDL_ttf-COPYING.txt.
+      It uses FreeType (libfreetype.so.6), which the device provides; FreeType is under the
+      FreeType Licence (BSD-style) or the GPLv2.
+  SDL 1.2 (libSDL-1.2.so.0, provided by the device)  LGPL 2.1, linked dynamically.
+  stb_vorbis v1.22 (Sean Barrett, public domain / MIT)  stb_vorbis-LICENSE.txt.
+  stb_image v2.30 (Sean Barrett, public domain / MIT)   stb_image-LICENSE.txt.
+  SF3500 display, audio, pad and mixer modules (hwdisp, hwaudio, joykey, sf3500_mixer):
+      glue code derived from TreeFrogUI's pico286 SF3000 patch, used under the permission
+      recorded in the Ports Collection submissions.

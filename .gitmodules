@@ -61,3 +61,6 @@
 [submodule "ports/quake/source"]
 	path = ports/quake/source
 	url = https://github.com/Kryptikone316/tyrquake.git
+[submodule "ports/blockdude/source"]
+	path = ports/blockdude/source
+	url = https://github.com/Kryptikone316/blockdude_funkey.git
