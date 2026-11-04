@@ -1,0 +1,17 @@
+{
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
+  "schema_version": 1,
+  "id": "quake2",
+  "name": "Quake II",
+  "launcher": "Quake II.sh",
+  "launch": {
+    "type": "libretro",
+    "binary": "quake2_libretro.so",
+    "content": "baseq2/pak0.pak"
+  },
+  "required_file_sets": [
+    ["baseq2/pak0.pak"]
+  ],
+  "setup_guide": "docs/setup/quake2.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/quake2.md"
+}

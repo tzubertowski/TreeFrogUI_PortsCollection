@@ -1,0 +1,27 @@
+Quake II (Datafrog SF3500 port)
+
+Engine: vitaquake2, based on id Software's Quake II source release,
+  https://github.com/fgsfdsfgs/vitaquake2 (the file headers of its libretro port
+  credit Felipe Izzo and others), as adapted by TreeFrogUI,
+  https://github.com/tzubertowski/treefrogui_vitaquake2
+  GNU General Public License, version 2 (../LICENSE-VITAQUAKE2); several files
+  carry "either version 2 or, at your option, any later version".
+  The game code of the official add-ons (The Reckoning and Ground Zero) comes from
+  the same project.
+SF3500 changes (build flags, real-time clock and sound, 320x240 default, gamepad
+  layout, crash report, the game loader): AthruZ,
+  https://github.com/Kryptikone316/treefrogui_vitaquake2 (branch sf3500).
+  Distributed under the same GPL terms as the rest of the program.
+Game: Quake II, id Software, 1997, and its add-ons. No game data is included:
+  baseq2/pak0.pak, the add-on paks and the music are the player's own. Quake is a
+  trademark of id Software; the box art shows the Quake II logo as a floppy-disk
+  icon (fan art by the port author) only to identify the game.
+Third-party code compiled into the cores: the Independent JPEG Group library,
+  Ogg and Tremor (BSD-style licence, Xiph.Org Foundation) and libretro-common
+  (MIT). Their licence texts are in THIRD-PARTY.txt.
+Game loader (quakeloader.mipsel): written for this port. Its display wrapper and
+  gamepad reader are the small modules shared by the SF3500 ports, derived from
+  TreeFrogUI's pico286 SF3000 patch; its fallback font is font8x8 by Daniel
+  Hepper, public domain (font8x8-license.txt).
+
+Source code for this port is the pinned "source" submodule of this repository.

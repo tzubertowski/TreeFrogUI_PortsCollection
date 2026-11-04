@@ -61,3 +61,6 @@
 [submodule "ports/quake/source"]
 	path = ports/quake/source
 	url = https://github.com/Kryptikone316/tyrquake.git
+[submodule "ports/quake2/source"]
+	path = ports/quake2/source
+	url = https://github.com/Kryptikone316/treefrogui_vitaquake2.git
