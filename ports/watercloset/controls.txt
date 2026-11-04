@@ -1,0 +1,42 @@
+# Water Closet button mapping
+#
+# One line per action:   action=BUTTON    or    action=BUTTON,BUTTON
+# An action works while any of its buttons is held. Lines starting with # are
+# comments. The game reads this file when it starts, so quit and relaunch after
+# changing it. A mistake on a line is written to log.txt and that line keeps its
+# default.
+#
+# Buttons:  LEFT RIGHT UP DOWN   (the D-pad)
+#           A B X Y L1 R1 L2 R2 START SELECT
+#           (L2 and R2 only exist on some models, such as the SF3000 and SF3500;
+#           there is no L3/R3. L2 and R2 are ignored while SELECT is held.)
+#           NONE                 (turns the action off; not allowed for pause/accept)
+#
+# Select + Start together always quit the game, whatever is set here.
+#
+# The on-screen hints (tips, "press [X] to ...", the Controls list in Options)
+# show whatever buttons are set below.
+
+# Walking, and moving through menus
+left=LEFT
+right=RIGHT
+up=UP
+down=DOWN
+
+# Jump. Each jump needs a fresh press unless jump_repeat=1 in watercloset.txt.
+jump=A
+
+# Use the item Walter is carrying (the water pistol)
+use=B
+
+# Create a clone that repeats your last run (and put Walter back at the start)
+clone=X
+
+# Start the stage over (removes any clone)
+restart=Y
+
+# Pause menu, and "back" in the other menus
+pause=START
+
+# Confirm in menus and move on from tips. Several buttons are fine.
+accept=A,B,X

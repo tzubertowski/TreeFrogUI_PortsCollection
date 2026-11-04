@@ -1,0 +1,38 @@
+Water Closet (Datafrog SF3500 port)
+
+Game: Water Closet, by Stephen Sweeney and Richard Sweeney (Parallel Realities, 2019),
+  https://github.com/stephenjsweeney/waterCloset (tag v1.0), https://www.parallelrealities.co.uk
+  Source code: GNU General Public License 3.0 (GPL-3.0.txt).
+  Graphics (gfx/) and data (data/): Creative Commons BY-NC-SA 3.0, "Copyright 2019, Parallel Realities",
+  as stated in upstream's README and in the game's credits. NOTE: these assets are NON-COMMERCIAL.
+  Upstream's bundled legalcode.txt is the CC BY-NC-SA 4.0 text (kept here as
+  legalcode-CC-BY-NC-SA-4.0-as-shipped-upstream.txt); the stated licence is version 3.0:
+  https://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+SF3500 platform backend (sf3500/ and the src/system changes): AthruZ,
+  https://github.com/Kryptikone316/waterCloset (branch sf3500). The game's own files are unchanged
+  except that three MP3s were converted to Ogg Vorbis (the port's mixer decodes Ogg only).
+Music (music/), with the credit given in the game's own credits (data/misc/credits.txt):
+  contemplation.ogg      by bart (CC-BY)            https://opengameart.org/content/contemplation
+  Meadow Thoughts.ogg    by Ecrivain (CC0)          https://opengameart.org/content/meadow-thoughts
+  puzzle-1-a / puzzle-1-b  by rezoner (CC-BY)        https://opengameart.org/content/puzzle-tune-1
+                          (converted from MP3 to Ogg Vorbis for this port)
+Sound effects (sound/): credited per file in the game's own credits (data/misc/credits.txt): freesound.org
+  files under CC0 or CC-BY, and bfxr effects under CC0. The water-spraying sound by Jagadamba (CC-BY) was
+  converted from MP3 to Ogg Vorbis for this port. Three sounds the game uses are NOT in upstream's credits:
+  25879__acclivity__drip1.ogg    by acclivity   CC BY-NC 4.0 (non-commercial), https://freesound.org/people/acclivity/sounds/25879/
+  398032__swordofkings128__splash.ogg  by swordofkings128  CC0, https://freesound.org/people/swordofkings128/sounds/398032/
+  plunge.ogg                     origin not stated upstream
+  mortice_key_drop_on_concrete_floor.ogg: "Copyright www.freesfx.co.uk" (credit with the URL
+  http://www.freesfx.co.uk, as the FreeSFX licence requires). FreeSFX's End User License Agreement
+  allows use in games with credit but not distribution of the sounds independently of a production:
+  https://www.freesfx.co.uk/Page/4/End-User-License-Agreement. It is included here only as part of
+  the game, exactly as upstream ships it.
+Font (fonts/): EnterCommand.ttf by jeti, CC BY 4.0, https://www.dafont.com/enter-command.font
+SDL_ttf 2.0.15 (compiled in): Sam Lantinga, zlib licence (sdl2_ttf-zlib.txt). The Ogg Vorbis decoder in
+  the port's mixer is stb_vorbis by Sean Barrett, public domain / MIT.
+SDL2, SDL2_image, FreeType and the C++ runtime are provided by the device's firmware and linked dynamically;
+  they are not included here.
+Device selection through /tmp/tfdevice.env: from TreeFrogUI's hijack script (zhijack.tpl.sh), pointed out by
+  Maheshivara. The display wrapper is derived from TreeFrogUI's pico286 SF3000 patch.
+
+Source code for this port is the pinned "source" submodule of this repository.
