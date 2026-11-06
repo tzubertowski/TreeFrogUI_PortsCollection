@@ -61,3 +61,6 @@
 [submodule "ports/quake/source"]
 	path = ports/quake/source
 	url = https://github.com/Kryptikone316/tyrquake.git
+[submodule "ports/defensemania/source"]
+	path = ports/defensemania/source
+	url = https://github.com/Kryptikone316/defense-mania.git
