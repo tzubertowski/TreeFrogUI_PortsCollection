@@ -1,0 +1,14 @@
+{
+  "$schema": "./../../docs/info/schemas/config/v1.schema.json",
+  "schema_version": 1,
+  "id": "defensemania",
+  "name": "Defense Mania",
+  "launcher": "Defensemania.sh",
+  "launch": {
+    "type": "native",
+    "binary": "defensemania.mipsel"
+  },
+  "required_file_sets": [],
+  "setup_guide": "docs/setup/defensemania.md",
+  "setup_guide_url": "https://github.com/tzubertowski/TreeFrogUI_PortsCollection/blob/main/docs/setup/defensemania.md"
+}
