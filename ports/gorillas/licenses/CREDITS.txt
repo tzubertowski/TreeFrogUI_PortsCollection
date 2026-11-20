@@ -12,7 +12,7 @@ Game
 Art and sound
   Every picture (the gorillas, banana, suns and moons, the city themes, the menus) is drawn in code
   and every sound is synthesised at start-up; all of it is original work under the same MIT licence.
-  The box art is rendered from the game itself.
+  The box art is the port author's floppy-disk illustration; its label shows the game's own artwork.
 
 Font
   font8x8 - Daniel Hepper, from the IBM PC/VGA font data assembled by Marcel Sondaar. Public domain.

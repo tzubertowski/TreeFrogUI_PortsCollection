@@ -8,6 +8,8 @@ original.
   skyline, bananas thrown by angle and velocity with wind and gravity) are reimplemented from scratch.
   Every picture is drawn in code (`src/art.c`, `src/theme.c`) and every sound is synthesised when the
   game starts (`src/sound.c`); no image or audio files are shipped other than the box art.
+* The box art (a floppy-disk illustration whose label carries the game's own artwork) was supplied by the
+  port author and is used only to identify the game.
 * The game and everything made for it, including the five themes (the Q-BASIC theme's gorilla, sun,
   banana, text-screen menu and PC-speaker-style sounds are our own drawings and synthesis in the style
   of the original, not copies), the twelve gorilla looks, the computer opponents and the box art, is
