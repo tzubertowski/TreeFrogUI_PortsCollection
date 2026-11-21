@@ -1,0 +1,23 @@
+# Gorillas settings (the menu reads and writes this file)
+# mode: 0 vs CPU, 1 two players, 2 CPU vs CPU
+mode=0
+# opponent: 0 Cub, 1 Chimp, 2 Baboon, 3 Orangutan, 4 Silverback
+opponent=2
+rounds=3
+# gravity: Mercury, Venus, Earth, Moon, Mars, Jupiter, Saturn, Uranus, Neptune or Pluto
+gravity=Earth
+# wind: 0 off, 1 per round (classic), 2 every throw
+wind=1
+# input: 0 D-pad + keypad, 1 D-pad only, 2 keypad only
+input=0
+guide=1
+trail=0
+volume=7
+# fps: frame rate cap (the game keeps its speed)
+fps=50
+name1=Player 1
+name2=Player 2
+# theme: Q-BASIC (the original's look and feel), Classic (this game's own first look), Uptown, Moonlit or Harbor; purely cosmetic
+theme=Q-BASIC
+# sky: Smiley Sun, Cool Sun, Retro Sun, Crescent Moon, Full Moon, Sleepy Moon (a night sky), Q-BASIC Sun, Random (each round) or Auto (the theme's own); purely cosmetic
+sky=Auto

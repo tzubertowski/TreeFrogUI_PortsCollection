@@ -76,3 +76,6 @@
 [submodule "ports/skifree/source"]
 	path = ports/skifree/source
 	url = https://github.com/Kryptikone316/skifree_sdl.git
+[submodule "ports/gorillas/source"]
+	path = ports/gorillas/source
+	url = https://github.com/Kryptikone316/gorillas-port.git

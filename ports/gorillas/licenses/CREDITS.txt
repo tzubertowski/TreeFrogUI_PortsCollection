@@ -1,0 +1,21 @@
+Gorillas for the Data Frog SF3500 - credits and licences
+========================================================
+
+Game
+  Gorillas - written for the SF3500 by AthruZ (Kryptikone316), MIT licence, text in LICENSE.txt.
+  Source: https://github.com/Kryptikone316/gorillas-port
+  Inspired by the QBasic game "Gorillas" (Microsoft, 1990). It contains none of that game's code,
+  pictures or sounds, and is not affiliated with or endorsed by Microsoft.
+  The display, audio and pad glue is derived from TreeFrogUI's pico286 SF3000 patch and is under the
+  same MIT licence.
+
+Art and sound
+  Every picture (the gorillas, banana, suns and moons, the city themes, the menus) is drawn in code
+  and every sound is synthesised at start-up; all of it is original work under the same MIT licence.
+  The box art is the port author's floppy-disk illustration; its label shows the game's own artwork.
+
+Font
+  font8x8 - Daniel Hepper, from the IBM PC/VGA font data assembled by Marcel Sondaar. Public domain.
+
+Third-party code
+  SDL2 (zlib licence) is provided by the device and is not bundled.
