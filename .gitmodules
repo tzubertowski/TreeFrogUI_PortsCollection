@@ -76,3 +76,6 @@
 [submodule "ports/skifree/source"]
 	path = ports/skifree/source
 	url = https://github.com/Kryptikone316/skifree_sdl.git
+[submodule "ports/minesperfect/source"]
+	path = ports/minesperfect/source
+	url = https://github.com/Kryptikone316/mines-perfect-port.git

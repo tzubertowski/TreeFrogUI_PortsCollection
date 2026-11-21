@@ -1,0 +1,14 @@
+Mines-Perfect
+  Original game (c) 1995-2003 Christian Czepluch <mail@czeppi.de>
+  http://www.czeppi.de   https://sourceforge.net/projects/mines-perfect/   GPL-2.0-or-later
+
+Mines-Perfect for the SF3500 (SDL2 front end, handheld packaging)
+  (c) 2026 AthruZ (Kryptikone316)   GPL-2.0-or-later
+
+Sound effects (sound/)
+  Synthesised for this port (tools/make_sounds.py), GPL-2.0-or-later like the rest of the port.
+
+DejaVu Sans (glyphs rasterised into the game)
+  (c) Bitstream, Inc.; DejaVu changes are public domain. See DejaVu-fonts-LICENSE.txt.
+
+Background colours: built in. The optional art pack (separate download) carries its own credits and licence.
