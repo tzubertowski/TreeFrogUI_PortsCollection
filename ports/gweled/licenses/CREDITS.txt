@@ -1,0 +1,27 @@
+Gweled for the Data Frog SF3500 - credits and licences
+======================================================
+
+Game
+  Gweled 1.0-beta2 - (c) 2003-2005 Sebastien Delestaing <sebdelestaing@free.fr>,
+  (c) 2010-2026 Daniele Napolitano <dnax88@gmail.com>. GPL-2.0-or-later, text in
+  Gweled-COPYING-GPL-2.txt. https://gweled.org
+  Also credited in the original's About dialog: Wesley Ellis; Crunchpix (explode sound).
+  The game rules are a C port of the original's board_engine.c; the gem pictures (from the
+  original's SVG files) and the click, swap and explode sounds are the original's.
+
+SF3500 version
+  (c) 2026 AthruZ (Kryptikone316), GPL-2.0-or-later (the SDL2 front end, menus, animation, scores,
+  music player and packaging, and the display, audio and pad glue). The display, audio and pad
+  glue is derived from TreeFrogUI's pico286 SF3000 patch.
+  Source: https://github.com/Kryptikone316/gweled-port
+
+Music (optional separate download, not in this package)
+  Eight tracks made for this port by AthruZ (Kryptikone316), CC0 1.0 (public domain dedication).
+
+Font
+  DejaVu Sans Bold (glyphs rasterised into the game) - Bitstream / Tavmjong Bah, text in
+  DejaVu-fonts-LICENSE.txt.
+
+Third-party code
+  stb_vorbis (Sean Barrett), public domain / MIT, text in stb_vorbis.txt - decodes the music.
+  SDL2 (zlib licence) is provided by the device and is not bundled.
