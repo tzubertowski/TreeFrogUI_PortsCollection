@@ -94,6 +94,9 @@
 [submodule "ports/neotron-altitude/source"]
 	path = ports/neotron-altitude/source
 	url = https://github.com/Kryptikone316/Neotron-Altitude-port.git
+[submodule "ports/dead-mobsters/source"]
+	path = ports/dead-mobsters/source
+	url = https://github.com/Kryptikone316/dead-mobsters-port.git
 [submodule "ports/psychosomnium/source"]
 	path = ports/psychosomnium/source
 	url = https://github.com/Kryptikone316/Psychosomnium-port.git

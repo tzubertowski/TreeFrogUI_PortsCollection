@@ -1,0 +1,25 @@
+Dead Mobsters
+  Original game (c) Outhouse Software. Freeware: the author's readme asks for it to be distributed to as many people
+  as possible (game/readme.txt). The contents of the game files in this port are unchanged.
+
+Dead Mobsters for the SF3500 (this port: shim, build scripts, packaging)
+  (c) 2026 AthruZ (Kryptikone316). The part of shim/ that links into the Fenix interpreter is under the GPL, version 2
+  or later, like Fenix. The settings code it shares with the launcher (dm_settings, gamma tables), the tools, scripts
+  and packaging files are under the MIT licence (port-mit.txt).
+
+Launcher (launcher/)
+  (c) 2026 AthruZ (Kryptikone316), MIT licence (port-mit.txt). Its font data is made from the DejaVu fonts and is
+  under their licence (dejavu-fonts.txt).
+
+Interpreter
+  Fenix 0.80, (c) 1999 Jose Luis Cebrian Pague, (c) 2002 Fenix Team, GNU General Public License version 2 or later
+  (fenix-gpl-2.txt). Only two small changes: the PNG error jump uses png_jmpbuf(), and a stand-in direct.h
+  (shim/direct.h). The SDL 1.2 headers shim/SDL_keysym.h and shim/SDL_types.h are copied from the SDL 1.2 sources
+  that come with the Fenix tree, (c) Sam Lantinga, GNU Lesser General Public License (sdl-1.2-lgpl.txt).
+
+Libraries linked in
+  SDL2 and SDL2_mixer (zlib licence), libxmp-lite (MIT), libpng (libpng licence), zlib (zlib licence).
+
+SF3500 layer
+  The display, audio and gamepad glue (sf3500/ and the audio pacing / mixer patches in sf3500/patches/) is derived
+  from TreeFrogUI's pico286 SF3000 patch and picoarch's SF3000 code.
