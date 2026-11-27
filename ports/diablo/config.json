@@ -7,7 +7,7 @@
   "launch": {
     "type": "native",
     "binary": "devilutionx",
-    "args": ["--verbose", "--diablo", "-n"]
+    "args": ["--diablo", "-n"]
   },
   "required_file_sets": [["DIABDAT.MPQ"]],
   "setup_guide": "docs/setup/diablo.md",

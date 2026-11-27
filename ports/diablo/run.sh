@@ -11,6 +11,8 @@ cd "$PORT_DIR"
 rm -f /mnt/sdcard/cubegm/port_error.txt
 export HOME="$PORT_DIR"
 export LC_ALL=C LANG=C
+# SDL supplies an indexed software surface; DevilutionX presents it via the handheld driver.
+export SDL_VIDEODRIVER=dummy
 export SDL_NOMOUSE=1 SDL_MOUSEDEV=/dev/null SDL_MOUSEDRV=none
-export LD_LIBRARY_PATH=/mnt/sdcard/cubegm/lib:/lib:/usr/lib
-exec "$PORT_DIR/devilutionx" --verbose --diablo -n
+export LD_LIBRARY_PATH=/mnt/sdcard/cubegm/lib:/mnt/sdcard/cubegm/usr/lib:/lib:/usr/lib
+exec "$PORT_DIR/devilutionx" --diablo -n
